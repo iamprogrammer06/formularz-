@@ -1,0 +1,118 @@
+<!DOCPTYPE HTML>
+<html>
+<head>
+<style>
+body
+{
+background-image: url('tak.png');
+background-size:100% 100%;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+</style>
+<br>
+<b>
+<p style="font-family: 'Times New Roman', Times, serif; font-size: xx-large;text-align: center"> FORMULARZ ZGŁOSZENIA SPRZĘTU DO SERWISU IDREAM®</p>
+</b>
+</head>
+<body>
+<p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+<fieldset>
+  <legend> DANE KONTAKTOWE </legend>
+<br>
+<li> Imię:</li>
+<input id="imie" type="text" required>
+</label>
+<br>
+<br>
+<br>
+<li>Nazwisko:</li>
+<input id="nazwisko" type="text" required>
+</label>
+<br>
+<br>
+<br>
+<li>E-Mail:</li>
+<label for="E-mail" type="text" required>
+<input id="Email" type="text" placeholder="przyklad@email.com">
+</label>
+<br>
+<br>
+<br>
+<label>
+<li>Telefon: </li>
+<input id="Telefon" type="text" pattern="[0-9]{3}-[0-9]{3}" placeholder="XXX-XXX-XXX" required>
+</label>
+<br>
+<br>
+<br>
+<li>Miasto:</li>
+<label>
+<input id="city" type="text">
+</label>
+<br>
+<br>
+</fieldset>
+<fieldset>
+<legend> INFORMACJE O PRODUKCIE </legend>
+<br>
+<br>
+<li>Data zakupionego produktu:</li> <input type="date">
+<br>
+<br>
+<label for="kat"> Kategoria zakupionego produktu:</label>
+ <select id="Typ produktu">
+   <option value="a"> iPhone</option>
+   <option value="b">iPad</option>
+   <option value="c">Apple Watch</option>
+   <option value="d"> MacBook</option>
+   <option value="e"> Apple Pen</option>
+   <option value="f"> AirPods</option>
+   <option value="g"> Apple TV</option>
+   <option value="h"> Macintosh</option>
+</select> 
+<br>
+<br>
+<br>
+<li>Podaj numer seryjny produktu: (12 znakowy kod składający się dużych liter i cyfr):</li>
+<input id="Seria" type="text" pattern="/w{0,12}" placeholder="XXXXXXXXXXXX" required></label>
+<!--- warunek-->
+</fieldset>
+<fieldset>
+<legend> DODATKOWE INFORMACJE</legend>
+<li>
+<label>Czy korzystałeś już z usług serwisu iDream®?</label>
+</li>
+<input type="radio" name="zgoda"> Tak
+<input type="radio" name="odmowa"> Nie
+<br>
+<br>
+<li>
+Dodatkowe informacje, które chcesz przekazać serwisowi iDream®:
+</li>
+<br>
+<textarea rows="10" cols="60" placeholder="Opisz swój problem..."></textarea>
+<br>
+<br>
+<label><li> Załącz plik ze skanem przyjęcia zlecenia: </li>
+</label>
+<br>
+<input type="file"> 
+<br>
+<br>
+</fieldset>
+<fieldset>
+<legend> ZGODY UŻYTKOWNIKA</legend>
+Akceptuje regulamin strony
+<input type="checkbox" required> 
+<br>
+<br>
+Wyrażam zgodę na przetwarzanie moich danych osobowych przez iDream® w celu prowadzenia serwisu
+<input type="checkbox" required>
+</fieldset>
+<br>
+<br>
+<input type="submit" value="Prześlij formularz">
+</p>
+</body>
+</html>
